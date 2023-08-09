@@ -1,0 +1,10 @@
+.Advanced-container {
+	width: 41%;
+	margin-bottom: 20px;
+}
+.Advanced-items {
+	height: auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}

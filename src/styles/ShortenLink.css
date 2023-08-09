@@ -1,0 +1,115 @@
+.shorten-container {
+	height: 140px;
+	margin: 0px 20px;
+	padding: 0px 30px;
+	background-image: url(../assets/bg-shorten-desktop.svg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-color: hsl(257, 27%, 26%);
+	border-radius: 10px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+	top: -70px;
+}
+.shorten-container__main {
+	width: 100%;
+}
+.shorten-container__input {
+	width: 100%;
+	border: 2px solid #fff;
+	border-radius: 10px;
+	padding: 0.4rem;
+}
+.shorten-container__input-error {
+	width: 100%;
+	border: 2px solid hsl(0, 87%, 67%);
+	border-radius: 10px;
+	color: hsl(0, 87%, 67%);
+	padding: 0.4rem;
+}
+.shorten-container__link-require-error {
+	position: absolute;
+	margin-top: 1px;
+	color: hsl(0, 87%, 67%);
+	font-size: small;
+}
+.shorten-container__button {
+	padding: 0px 10px;
+}
+.shorten-links {
+	margin-top: -35px;
+	margin-bottom: 50px;
+}
+.shorten-links__list {
+	height: 65px;
+	background-color: #fff;
+	background-size: cover;
+	background-position: center;
+	border-radius: 10px;
+	margin-top: 1rem;
+	margin-inline: 20px;
+	padding: 0px 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-weight: 700;
+}
+.shorten-links__hr {
+	display: none;
+}
+.shorten-links__shr {
+	color: #2bd1d1;
+	margin-right: 20px;
+}
+.shorten-links__copy {
+	width: 111px;
+}
+.shorten-links__copied {
+	background-color: hsl(260, 8%, 14%) !important;
+	width: 110px;
+}
+
+@media screen and (max-width: 630px) {
+	.shorten-container {
+		flex-direction: column;
+		height: 200px;
+		padding: 40px 20px;
+	}
+	.shorten-container__button {
+		width: 100%;
+	}
+	.shorten-container__button button {
+		width: 100%;
+	}
+	.shorten-container__main {
+		padding: 0px 10px;
+	}
+	.shorten-links__list {
+		height: 135px;
+		padding: 10px 40px;
+		flex-direction: column;
+		align-items: baseline;
+	}
+	.shorten-links__container {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		text-align: left;
+	}
+	.shorten-links__copied {
+		width: 100%;
+	}
+	.shorten-links__copy {
+		width: 100%;
+	}
+	.shorten-links__hr {
+		display: block;
+		width: 100%;
+		height: 3px;
+		background-color: #f0f1f6;
+		border: 1px #f0f1f6;
+	}
+}

@@ -1,0 +1,32 @@
+.main-container {
+	background-color: #f0f1f6;
+	margin-top: 10%;
+	text-align: center;
+}
+button {
+	border-radius: 6px;
+	width: 150px;
+	padding-inline: 1rem;
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+	border: 0;
+	outline: none;
+	background-color: #2bd1d1;
+	color: #fff;
+	font-weight: 700;
+	cursor: pointer;
+}
+button:hover {
+	background-color: #9be3e2;
+}
+a {
+	block-size: 26px;
+	font-size: medium;
+	font-weight: 700;
+	color: #a09fa7;
+	text-decoration: none;
+}
+a:hover {
+	color: #000;
+	cursor: pointer;
+}

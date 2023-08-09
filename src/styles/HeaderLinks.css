@@ -1,0 +1,36 @@
+.headers-container {
+	height: 60px;
+	padding: 0px 20px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+}
+.headers-container__menu {
+	width: 100%;
+	padding-left: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	font-weight: 700;
+}
+.headers-container__menu-responsive {
+	display: none;
+}
+.headers-container__left {
+	width: 245px;
+	margin: 0px 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.headers-container__right {
+	width: 165px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.headers-conainer__button {
+	width: 100px;
+	font-size: medium;
+	border-radius: 30px;
+}
