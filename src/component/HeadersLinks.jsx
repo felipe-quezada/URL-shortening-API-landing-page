@@ -19,25 +19,6 @@ export const HeadersLinks = () => {
 					<button className="headers-conainer__button">Sign Up</button>
 				</section>
 			</nav>
-			<nav className="headers-container__menu-responsive">
-				<div
-					className={`headers-container__arrow-button ${
-						isClickedMenu ? 'clicked' : 'unclicked'
-					}`}
-					onClick={handleClickMenu}
-				>
-					<strong> {'<'} </strong>
-				</div>
-				<ul className={`headers-container__menu-content ${isClickedMenu ? 'visible' :'hidden'}`}>
-					<a href="#">Login</a>
-					<a href="#">Resources</a>
-					<a href="#">Features</a>
-					<a href="#">Pricing</a>
-					<a>Sign up</a>
-				</ul>
-				<div className={`headers-container__bar-menu ${isClickedMenu ? 'visible' :'hidden'}`}></div>
-				<section className="headers-container__right"></section>
-			</nav>
 		</section>
 	);
 };
