@@ -36,6 +36,7 @@
 		scale: 80%;
 	}
 	.SecondHeader-container__img {
+		width: 100%;
 		scale: 80%;
 	}
 }
