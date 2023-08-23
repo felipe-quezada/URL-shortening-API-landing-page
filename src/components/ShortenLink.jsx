@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import '../styles/ShortenLink.css';
 import axios from 'axios';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
@@ -7,7 +7,6 @@ export const ShortenLink = () => {
 	const [inputText, setInputText] = useState('');
 	const [shortenLinks, setShortenLinks] = useState([]);
 	const [errorSyntax, setErrorSyntax] = useState(false);
-
 	const handleText = (e) => {
 		setInputText(e.target.value);
 	};
@@ -33,6 +32,7 @@ export const ShortenLink = () => {
 			} else {
 				setShortenLinks([...shortenLinks, newLink]);
 			}
+			setInputText('');
 		} catch (error) {
 			setErrorSyntax(true);
 		}
@@ -41,6 +41,17 @@ export const ShortenLink = () => {
 		shortenLinks[id].isCopied = true;
 		setShortenLinks([...shortenLinks]);
 	};
+	useEffect(() => {
+		if (shortenLinks.length > 1) {
+			globalThis.localStorage.setItem('items', JSON.stringify(shortenLinks));
+		}
+	}, [shortenLinks]);
+	useEffect(() => {
+		const links = JSON.parse(globalThis.localStorage.getItem('items'));
+		if (links) {
+			setShortenLinks(links);
+		}
+	}, []);
 
 	return (
 		<div className="global-container">
@@ -55,6 +66,7 @@ export const ShortenLink = () => {
 							}
 							onChange={handleText}
 							placeholder="Shorten a link here..."
+							value={inputText}
 						/>
 						<p className="shorten-container__link-require-error">
 							{errorSyntax ? 'Please add a Link' : ''}
@@ -69,7 +81,9 @@ export const ShortenLink = () => {
 				<div className="shorten-links global-container">
 					{shortenLinks.map((shortenLink, index) => (
 						<section className="shorten-links__list" key={index}>
-							<span>{shortenLink.origin}</span>
+							<div className="shorten-links__link-container">
+								<span>{shortenLink.origin}</span>
+							</div>
 							<hr className="shorten-links__hr" />
 							<div className="shorten-links__container">
 								<span className="shorten-links__shr">{shortenLink.link}</span>

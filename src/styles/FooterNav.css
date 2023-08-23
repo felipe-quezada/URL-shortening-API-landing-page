@@ -1,0 +1,72 @@
+.footer-nav {
+  background-color: #232027;
+  display: flex;
+  color: #fff;
+  height: 200px;
+}
+.footer-nav__container {
+  height: 100px;
+  width: 100%;
+  padding: 0px 20px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  text-align: center;
+}
+.footer-nav__container-img {
+  width: 30px;
+  height: 30px;
+  border-radius: 10px;
+}
+.footer-nav__container-menu {
+  display: flex;
+  justify-content: space-around;
+  width: 70%;
+  text-align: left;
+}
+.footer-nav__container-menu li a {
+  font-weight: 500;
+}
+.footer-nav__container-menu li a:hover {
+  color: #38C5C0
+}
+.footer-nav_container-menu-img {
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
+}
+.facebook-img:nth-child(2), .twitter-img:nth-child(2), .pinterest-img:nth-child(2), .instagram-img:nth-child(2) {
+  display: none;
+}
+
+/* Hovers icons */
+.footer-nav__container-img:nth-child(1):hover .facebook-img:nth-child(1), .footer-nav__container-img:nth-child(2):hover .twitter-img:nth-child(1), .footer-nav__container-img:nth-child(3):hover .pinterest-img:nth-child(1), .footer-nav__container-img:nth-child(4):hover .instagram-img:nth-child(1)  {
+  display: none;
+}
+.footer-nav__container-img:nth-child(1):hover .facebook-img:nth-child(2), .footer-nav__container-img:nth-child(2):hover .twitter-img:nth-child(2), .footer-nav__container-img:nth-child(3):hover .pinterest-img:nth-child(2), .footer-nav__container-img:nth-child(4):hover .instagram-img:nth-child(2) {
+  display: initial;
+}
+
+@media screen and (max-width: 700px) {
+  .footer-nav {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    min-width: 375px;
+  }
+  .footer-nav__container {
+    height: 600px;
+    padding: 30px 20px 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-nav__container-menu {
+    height: 500px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .footer-nav_container-menu-img {
+    width: 135px;
+  }
+}
