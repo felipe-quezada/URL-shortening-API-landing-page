@@ -1,11 +1,20 @@
 import '../styles/FooterNav.css';
+import logo from "../../src/assets/logo.svg"
+import facebook from "../../src/assets/icons8-facebook.svg"
+import facebookHover from "../../src/assets/icons8-facebookHover.svg"
+import twitter from "../../src/assets/icons8-twitter.svg"
+import twitterHover from "../../src/assets/icons8-twitterHover.svg"
+import pinterest from "../../src/assets/icons8-pinterest.svg"
+import pinterestHover from "../../src/assets/icons8-pinterestHover.svg"
+import instagram from "../../src/assets/icons8-instagram.svg"
+import instagramHover from "../../src/assets/icons8-instagramHover.svg"
 
 export const FooterNav = () => {
 	return (
 		<section className="footer-nav">
 			<div className="footer-nav__container global-container">
 				<img
-					src="src\assets\logo.svg"
+					src={logo}
 					alt="logo"
 					style={{ filter: 'invert()' }}
 				/>
@@ -40,12 +49,12 @@ export const FooterNav = () => {
 							<a href="#">
 								<img
 									className="facebook-img"
-									src="src\assets\icons8-facebook.svg"
+									src={facebook}
 									alt="facebook"
 								/>
 								<img
 									className="facebook-img"
-									src="src\assets\icons8-facebookHover.svg"
+									src={facebookHover}
 									alt="facebook"
 								/>
 							</a>
@@ -54,12 +63,12 @@ export const FooterNav = () => {
 							<a href="#">
 								<img
 									className="twitter-img"
-									src="src\assets\icons8-twitter.svg"
+									src={twitter}
 									alt="twitter"
 								/>
 								<img
 									className="twitter-img"
-									src="src\assets\icons8-twitterHover.svg"
+									src={twitterHover}
 									alt="twitter"
 								/>
 							</a>
@@ -68,12 +77,12 @@ export const FooterNav = () => {
 							<a href="#">
 								<img
 									className="pinterest-img"
-									src="src\assets\icons8-pinterest.svg"
+									src={pinterest}
 									alt="pinterest"
 								/>
 								<img
 									className="pinterest-img"
-									src="src\assets\icons8-pinterestHover.svg"
+									src={pinterestHover}
 									alt="pinterest"
 								/>
 							</a>
@@ -82,12 +91,12 @@ export const FooterNav = () => {
 							<a href="#">
 								<img
 									className="instagram-img"
-									src="src\assets\icons8-instagram.svg"
+									src={instagram}
 									alt="instagram"
 								/>
 								<img
 									className="instagram-img"
-									src="src\assets\icons8-instagramHover.svg"
+									src={instagramHover}
 									alt="instagram"
 								/>
 							</a>

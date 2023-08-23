@@ -1,5 +1,5 @@
 import '../styles/SecondHeader.css';
-
+import ilustration from '../assets/illustration-working.svg'
 export const SecondHeader = () => {
 	return (
 		<section className="SecondHeader-container global-container">
@@ -13,7 +13,7 @@ export const SecondHeader = () => {
 			<div className="SecondHeader-container__img">
 				<img
 					style={{ width: '100%', objectPosition: 'left' }}
-					src="src/assets/illustration-working.svg"
+					src={ilustration}
 					alt="ilustration"
 				/>
 			</div>

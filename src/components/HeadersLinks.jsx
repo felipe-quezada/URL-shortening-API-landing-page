@@ -1,5 +1,6 @@
 import { useReducer } from 'react';
 import '../styles/HeaderLinks.css';
+import logo from "../../src/assets/logo.svg"
 
 const reducer = (menu, action) => {
 	if (action.type == 'clicked') {
@@ -27,7 +28,7 @@ export const HeadersLinks = () => {
 	return (
 		<>
 			<section className="headers-container global-container">
-				<img src="src\assets\logo.svg" alt="logo" />
+				<img src={logo} alt="logo" />
 				<nav className="headers-container__menu global-container">
 					<ul className="headers-container__left">
 						<a href="#">Features</a>

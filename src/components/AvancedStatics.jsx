@@ -1,4 +1,7 @@
 import '../styles/AvancedStatics.css';
+import recognitation from "../../src/assets/icon-brand-recognition.svg"
+import detailed from "../../src/assets/icon-detailed-records.svg"
+import fullyCustom from "../../src/assets/icon-fully-customizable.svg"
 
 export const AvancedStatics = () => {
 	return (
@@ -22,7 +25,7 @@ export const AvancedStatics = () => {
 					<section className="advanced-items__container">
 						<div className="advanced-items__container-img">
 							<img
-								src="src/assets/icon-brand-recognition.svg"
+								src={recognitation}
 								alt="recognition icon"
 							/>
 						</div>
@@ -39,7 +42,7 @@ export const AvancedStatics = () => {
 					<section className="advanced-items__container">
 						<div className="advanced-items__container-img">
 							<img
-								src="src/assets/icon-detailed-records.svg"
+								src={detailed}
 								alt="detailed records"
 							/>
 						</div>
@@ -56,7 +59,7 @@ export const AvancedStatics = () => {
 					<section className="advanced-items__container">
 						<div className="advanced-items__container-img">
 							<img
-								src="src/assets/icon-fully-customizable.svg"
+								src={fullyCustom}
 								alt="fully customizable"
 							/>
 						</div>
